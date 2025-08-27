@@ -8,4 +8,5 @@ RUN CGO_ENABLED=0 go build -o /app/halushko-ist-chat-bot
 FROM alpine:latest
 WORKDIR /root/
 COPY --from=builder /app/halushko-ist-chat-bot .
+RUN chmod +x /root/member-handler-go
 CMD ["./halushko-ist-chat-bot"]
