@@ -1,4 +1,4 @@
-package halushko_ist_chat_bot
+package main
 
 import (
 	"log"
